@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        //first way-if-else statement
+        {
+            string sign = Console.ReadLine();
+            if(sign=="2"|| sign == "3"||sign=="K"||sign == "4" || sign == "5" || sign == "6" || sign == "7" || sign == "8" || sign == "9"||sign == "10"||sign == "J"||sign == "Q"|| sign == "A" )
+                {
+                Console.WriteLine("yes {0}",sign);
+            }
+            else{
+                Console.WriteLine("no {0}",sign);
+            }
+            
+            
+            /////second way-switch-case
+            switch (sign)
+            {
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9":
+                case "10":
+                case "J":
+                case "K":
+                case "A":
+                case "Q":
+
+                    Console.WriteLine("yes {0}",sign);
+                    break;
+                default:
+                    Console.WriteLine("no {0}",sign);
+                    break;
+
+          
+
+        }
+    }
+}
