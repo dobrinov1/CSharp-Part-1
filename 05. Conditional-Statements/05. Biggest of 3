@@ -53,4 +53,43 @@ namespace ConsoleApp6
         }
     }
 }
+//3)Using for cycle
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            {
+                double biggestNum = double.MinValue;
+                for(int a = 0; a < 3; a++)
+                {
+                    double number = double.Parse(Console.ReadLine());
+                    if (number>biggestNum)
+                    {
+                        biggestNum=number;
+                    }
+                    
+                }
+                Console.WriteLine(biggestNum);
+
+
+
+
+
+            }
+
+
+        }
+    }
+}
+    
+
     
