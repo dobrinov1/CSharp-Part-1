@@ -1,0 +1,119 @@
+//1)using for cycle
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            {
+                double a = double.Parse(Console.ReadLine());
+                double b = double.Parse(Console.ReadLine());
+                double c = double.Parse(Console.ReadLine());
+                double d = double.Parse(Console.ReadLine());
+                double e = double.Parse(Console.ReadLine());
+                double checkaandb = Math.Max(a, b);
+                double checkcde = Math.Max(c,Math.Max(d, e));
+                if (checkaandb>checkcde)
+                {
+                    Console.WriteLine(checkaandb);
+                }
+                else
+                {
+                    Console.WriteLine(checkcde);
+                }
+
+
+
+
+
+            }
+
+
+        }
+    }
+}
+    
+//2)using if-statements
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            {
+                Console.Title = "The Biggest of Five Numbers";
+
+              
+                double a = double.Parse(Console.ReadLine());
+                double b = double.Parse(Console.ReadLine());
+                double c = double.Parse(Console.ReadLine());
+                double d = double.Parse(Console.ReadLine());
+                double e = double.Parse(Console.ReadLine());
+                double biggest = 0;
+
+                if (a > b)
+                {
+                    biggest = a;
+
+                    if (c > biggest)
+                    {
+                        biggest = c;
+
+                    }
+
+                    if (d > biggest)
+                    {
+                        biggest = d;
+                    }
+
+                    if (e > biggest)
+                    {
+                        biggest = e;
+                    }
+                }
+                else
+                {
+                    biggest = b;
+
+                    if (c > biggest)
+                    {
+                        biggest = c;
+                    }
+
+                    if (d > biggest)
+                    {
+                        biggest = d;
+                    }
+
+                    if (e > biggest)
+                    {
+                        biggest = e;
+                    }
+                }
+
+                Console.WriteLine( biggest);
+
+
+
+
+            }
+
+
+        }
+    }
+}
+    
