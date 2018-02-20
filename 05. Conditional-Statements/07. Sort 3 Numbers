@@ -1,0 +1,95 @@
+1)FIRST Solution:
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int a = int.Parse(Console.ReadLine());
+        int b = int.Parse(Console.ReadLine());
+        int c = int.Parse(Console.ReadLine());
+
+        if (a > b && a > c)
+        {
+            if (b > c)
+            {
+                Console.WriteLine("{0} {1} {2}", a, b, c);
+            }
+            else
+            {
+                Console.WriteLine("{0} {1} {2}", a, c, b);
+            }
+        }
+        else if (b > a && b > c)
+        {
+            if (a > c)
+            {
+                Console.WriteLine("{0} {1} {2}", b, a, c);
+            }
+            else
+            {
+                Console.WriteLine("{0} {1} {2}", b, c, a);
+            }
+        }
+        else
+        {
+            if (a > b)
+            {
+                Console.WriteLine("{0} {1} {2}", c, a, b);
+            }
+            else
+            {
+Console.WriteLine("{0} {1} {2}", c, b, a);
+	}
+		}
+	}
+}
+	
+  
+  
+  
+  
+  
+  2)second solution:
+  using System;
+
+namespace Sort_3_Numbers
+{
+    class Sort_3_Numbers
+    {
+        static void Main(string[] args)
+        {
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            if (a > b)
+            {
+                // swap the values
+                int tmp = a;
+                a = b;
+                b = tmp;
+            }
+
+            // to be sure that b < c
+            if (b > c)
+            {
+                // swap the values
+                int tmp = b;
+                b = c;
+                c = tmp;
+            }
+
+            // aganin to be sure that a < b
+            // beacuse the previous swap could destroy the relation
+            if (a > b)
+            {
+                // swap the values
+                int tmp = a;
+                a = b;
+                b = tmp;
+            }
+            Console.WriteLine("{0} {1} {2}", c, b, a);
+        }
+    }
+}
+	
