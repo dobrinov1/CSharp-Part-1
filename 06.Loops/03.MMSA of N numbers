@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Numerics;
+
+namespace test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            double number1 = double.Parse(Console.ReadLine());
+            double min = number1;
+            double max = number1;
+            double sum = number1;
+            double avg = number1;
+            for (int i = 2; i <= n; i++)
+            {
+                double number = double.Parse(Console.ReadLine());
+                min = Math.Min(min, number);
+                max = Math.Max(max, number);
+                sum += number;
+                avg = sum / i;
+
+                
+
+            }
+            Console.WriteLine("min={0:f2}", min);
+            Console.WriteLine("max={0:f2}", max);
+            Console.WriteLine("sum={0:f2}", sum);
+            Console.WriteLine("avg={0:f2}", avg);
+
+
+        }
+
+
+
+
+
+        }
+    }
+
+
