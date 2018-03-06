@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TEst
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            for (int i = 2; i <= 14; i++)
+            {
+                
+                switch (i)
+                {
+                    case 11:
+                        input = "J";
+                        break;
+                    case 12:
+                        input = "Q";
+                        break;
+
+                    case 13:
+                        input = "K";
+                        break;
+                    case 14:
+                        input = "A";
+                        break;
+                    default:
+                        input = string.Empty + i;
+                        break;
+                }
+            
+            string output = "{0} of spades, {0} of clubs ,{0} of hearts ,{0} of diamonds";
+            Console.WriteLine(output, input);
+        }
+
+
+        }
+    }
+}
+
+
+       
