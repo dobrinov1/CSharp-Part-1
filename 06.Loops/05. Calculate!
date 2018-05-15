@@ -1,0 +1,62 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{double n=double.Parse(Console.ReadLine());
+	 double x=double.Parse(Console.ReadLine());
+	 double factorial=1; // декларираме factorial i sum и затова стартираме counter-a от 2;
+	 double sum=1+1/x;
+	 for(int counter=2;counter<=n;counter++)
+	 {factorial*=counter;
+	  double pow=Math.Pow(x,counter);
+	  sum=sum+(factorial/pow);
+	 }
+	 Console.WriteLine("{0:f5}",sum);
+	 }
+
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	 
+	
+	
+	
