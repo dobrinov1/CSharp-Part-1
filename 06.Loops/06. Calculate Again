@@ -1,0 +1,16 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		ulong n=ulong.Parse(Console.ReadLine());
+		ulong k=ulong.Parse(Console.ReadLine());
+		ulong sum=1;
+		for(ulong i =n;i>k;i--)// 1 < K < N < 100 
+		{sum*=i;
+		}
+	
+	Console.WriteLine(sum);
+}
+}
