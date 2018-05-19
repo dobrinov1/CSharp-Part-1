@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Numerics;
+
+namespace test
+{
+    class Program
+    {
+        static void Main()
+        {
+            BigInteger input = BigInteger.Parse(Console.ReadLine());
+            double smetka = 0;
+            double stepen = 0;
+            double result = 0;
+            do
+            {
+                if (input % 10 == 0)      //check last whether last digit is 0 or 1
+                {
+                    result = result + 0;
+                    stepen++;
+                    input = input / 10;
+                }
+                else
+                {
+                    smetka = Math.Pow(2, stepen);
+                    result = result + smetka;
+                    stepen++;
+                    input = input / 10;
+                }
+                
+            } while (input > 0);
+            Console.WriteLine( result);
+
+        }
+    }
+}
+        
+
