@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Numerics;
+
+namespace test
+{
+    class Program
+    {
+        static void Main()
+        {
+            long input = long.Parse(Console.ReadLine());
+            if (input==0)
+            {
+                Console.WriteLine("0");
+            }
+            else
+            {
+                string remainder;
+                long checkremainder;
+                string result = "";
+                while(input>0)
+                {
+                    checkremainder = input % 16;
+                    input = input / 16;
+                    switch(checkremainder)
+                    {
+                        case 10: remainder = "A";break;
+                        case 11: remainder = "B"; break;
+                        case 12: remainder = "C"; break;
+                        case 13: remainder = "D"; break;
+                        case 14: remainder = "E"; break;
+                        case 15: remainder = "F"; break;
+                        default:remainder = checkremainder.ToString();break;
+
+                    }
+                    result = remainder + result;
+                }
+                Console.WriteLine(result  );
+            }
+
+        }
+    }
+}
+        
+
